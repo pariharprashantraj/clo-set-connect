@@ -7,7 +7,6 @@ export const ContentListContainer = styled.div`
   width: 100%;
   justify-items: center;
   gap: 24px;
-  /* Default: 4 columns */
   grid-template-columns: repeat(4, 1fr);
 
   /* Below 1200px: 3 columns */
@@ -23,6 +22,7 @@ export const ContentListContainer = styled.div`
   /* Below 480px: 1 column */
   @media (max-width: 480px) {
     grid-template-columns: repeat(1, 1fr);
+    padding: 4px;
   }
 `;
 

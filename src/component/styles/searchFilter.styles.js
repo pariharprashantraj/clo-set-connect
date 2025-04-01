@@ -5,6 +5,9 @@ export const SearchContainer = styled.div`
   padding: 24px;
   background-color: #333;
   min-height: 18vh;
+  @media (max-width: 480px) {
+    padding: 12px;
+  }
 `;
 
 export const Input = styled.input`
@@ -23,6 +26,8 @@ export const Input = styled.input`
     color: #999;
     font-weight: 400;
   }
+  @media (max-width: 480px) {
+  }
 `;
 
 export const InputWrapper = styled.div`
@@ -37,6 +42,9 @@ export const SearchIcon = styled(FaSearch)`
   transform: translateY(-50%);
   color: #bbb;
   font-size: 14px;
+  @media (max-width: 480px) {
+    right: 48px;
+  }
 `;
 
 export const PricingOptions = styled.div`
@@ -54,6 +62,8 @@ export const PricingOptions = styled.div`
   align-items: center;
   color: #ccc;
   gap: 32px;
+  @media (max-width: 480px) {
+  }
 `;
 
 export const FilterOptionsContainer = styled.div`

@@ -6,6 +6,10 @@ export const HeaderContainer = styled.header`
   justify-content: flex-start;
   align-items: flex-start;
   margin: 8px;
+  @media (max-width: 480px) {
+    padding: 12px;
+    width: 90%;
+  }
 `;
 
 export const Logo = styled.div`
