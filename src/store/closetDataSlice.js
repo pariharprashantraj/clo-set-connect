@@ -5,7 +5,7 @@ const initialState = {
   data: [],
   status: "idle",
   error: null,
-  page: 1, // Track current page
+  page: 1,
 };
 
 const closetDataSlice = createSlice({
@@ -19,8 +19,8 @@ const closetDataSlice = createSlice({
       })
       .addCase(fetchData.fulfilled, (state, action) => {
         state.status = "succeeded";
-        state.data = [...state.data, ...action.payload.data]; // Append new data
-        state.page = action.payload.page; // Update page number
+        state.data = [...state.data, ...action.payload.data];
+        state.page = action.payload.page;
       })
       .addCase(fetchData.rejected, (state, action) => {
         state.status = "failed";

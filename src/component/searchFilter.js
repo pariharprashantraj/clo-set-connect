@@ -21,24 +21,21 @@ const SearchFilter = () => {
     debounce((value) => {
       dispatch(setSearchText(value));
     }, 500)
-  ).current; // Initialize debounced function
+  ).current;
 
-  // Handle input change
   const handleInputChange = (e) => {
     const value = e.target.value;
     setInputValue(value);
-    debouncedUpdate(value); // Use the debounced function
+    debouncedUpdate(value);
   };
 
-  // Handle checkbox change
   const handleCheckboxChange = (option) => {
     dispatch(toggleFilterOption(option));
   };
 
-  // Cleanup debounce on unmount
   useEffect(() => {
     return () => {
-      debouncedUpdate.cancel(); // Cancel any pending debounced calls
+      debouncedUpdate.cancel();
     };
   }, [debouncedUpdate]);
 
