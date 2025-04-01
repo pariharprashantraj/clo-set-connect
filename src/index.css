@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: AvenirNextLTPro, sans-serif;
+  color: #ffffff;
+  background-color: #000000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* logo:https://storagefiles.clo-set.com/public/connect/common/connect-desktop-header-bi.svg */
+/* icon: https://storagefiles.clo-set.com/public/connect/common/connect-bi-primary-high.png */
